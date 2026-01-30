@@ -7,13 +7,15 @@ import { useRef } from "react";
 const skills = [
   "Next.js",
   "TypeScript",
-  "React",
-  "Node.js",
-  "MongoDB",
-  "Tailwind CSS",
   "Python",
+  "AI Agents",
+  "AI Integration",
+  "LLM Workflows",
+  "API Design",
+  "MongoDB",
+  "Cloud Deployment",
+  "Automation",
   "Git",
-  "SQL",
 ];
 
 export default function Skills() {
@@ -32,22 +34,31 @@ export default function Skills() {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-4 sm:mb-6 md:mb-8">
-            Skills
+          <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-2 sm:mb-3">
+            Building Blocks & Technical Toolkit
           </h2>
 
-          <div className="flex flex-wrap gap-1.5 sm:gap-2">
-            {skills.map((skill) => (
-              <motion.span
-                key={skill}
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                className="text-[10px] sm:text-xs px-2 sm:px-3 py-1 sm:py-1.5 bg-secondary rounded-full text-foreground border border-border hover:border-muted-foreground/50 hover:bg-secondary/80 cursor-default transition-colors"
-              >
-                {skill}
-              </motion.span>
-            ))}
+          <p className="text-xs sm:text-sm text-muted-foreground mb-6 sm:mb-8">
+            A mix of technologies and principles I rely on to ship clean, functional products.
+          </p>
+
+          {/* Marquee Container */}
+          <div className="relative overflow-hidden py-4 rounded-xl">
+            {/* Fade edges */}
+            <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-r from-background to-transparent z-10" />
+            <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-16 bg-gradient-to-l from-background to-transparent z-10" />
+
+            {/* Marquee Track */}
+            <div className="flex animate-marquee hover:[animation-play-state:paused]">
+              {[...skills, ...skills].map((skill, index) => (
+                <span
+                  key={`${skill}-${index}`}
+                  className="flex-shrink-0 mx-1.5 sm:mx-2 px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm bg-secondary rounded-full text-foreground border border-border whitespace-nowrap"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
         </motion.div>
       </div>
