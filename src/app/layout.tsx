@@ -3,6 +3,7 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://example.com"),
   title: "Pavan Deshpande | Developer",
   description:
     "Aspiring Developer passionate about Development, AI, and Product Thinking. Skilled in building efficient applications and solving complex problems.",
@@ -20,7 +21,6 @@ export const metadata: Metadata = {
     title: "Pavan Deshpande | Developer",
     description:
       "Aspiring Developer passionate about Development, AI, and Product Thinking.",
-    url: "https://pavandeshpande.dev",
     siteName: "Pavan Deshpande Portfolio",
     locale: "en_US",
     type: "website",
