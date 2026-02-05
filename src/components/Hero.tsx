@@ -86,15 +86,16 @@ export default function Hero() {
 
         {/* Resume Links */}
         <div className="flex items-center gap-4">
-          <a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          <button
+            onClick={() => {
+              const pdfUrl = `${window.location.origin}/resume.pdf`;
+              window.open(`https://docs.google.com/viewer?url=${encodeURIComponent(pdfUrl)}&embedded=true`, '_blank');
+            }}
+            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
           >
             <FileText size={16} />
             View Resume
-          </a>
+          </button>
           <a
             href="/resume.pdf"
             download="Pavan_Deshpande_Resume.pdf"
