@@ -91,3 +91,10 @@ body::before {
 .group:hover .group-hover\:text-shadow-glow {
   text-shadow: 0 0 20px rgba(129, 140, 248, 0.5), 0 0 40px rgba(129, 140, 248, 0.3);
 }
+
+/* Faster marquee on mobile */
+@media (max-width: 640px) {
+  .animate-marquee {
+    animation-duration: 12s !important;
+  }
+}
