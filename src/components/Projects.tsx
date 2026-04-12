@@ -26,12 +26,12 @@ const projects = [
 
 const funProjects = [
   {
-    title: "Life in Weeks",
+    title: "Running Out",
     description:
-      "A week-by-week visualization of life to reflect on time, progress, and what remains.",
+      "Time doesn't wait. Neither should you. A visualization of how much of your life is left.",
     tech: ["JavaScript", "HTML", "CSS"],
-    github: "https://github.com/pavandeshpande12/life-in-weeks",
-    live: "https://pavandeshpande12.github.io/life-in-weeks/",
+    github: "https://github.com/pavandeshpande12/running-out",
+    live: "https://pavandeshpande12.github.io/running-out/",
   },
 ];
 
