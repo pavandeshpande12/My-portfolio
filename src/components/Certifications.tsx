@@ -12,6 +12,20 @@ const certifications = [
     skills: ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB"],
     link: "/certificates/web-development-bootcamp.pdf",
   },
+  {
+    title: "SQL (Basic) Certificate",
+    description: "Foundational SQL skills covering simple queries, relationships, and aggregators.",
+    issuer: "HackerRank",
+    skills: ["SQL", "Queries", "Aggregations", "Relationships"],
+    link: "https://www.hackerrank.com/certificates/2b15268d516a",
+  },
+  {
+    title: "Software Engineer Certificate",
+    description: "Verified software engineering skills covering problem solving, SQL, and REST APIs.",
+    issuer: "HackerRank",
+    skills: ["Problem Solving", "SQL", "REST API"],
+    link: "https://www.hackerrank.com/certificates/acbd279862ac",
+  },
 ];
 
 export default function Certifications() {
@@ -34,39 +48,26 @@ export default function Certifications() {
             Certifications
           </h2>
 
-          <div className="space-y-3 sm:space-y-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             {certifications.map((cert) => (
               <div
                 key={cert.title}
-                className="group rounded-xl border border-border bg-card transition-all hover:border-muted-foreground/50 p-3 sm:p-4 md:p-5"
+                className="group flex flex-col rounded-xl border border-border bg-card transition-all hover:border-muted-foreground/50 p-3 sm:p-4 md:p-5"
               >
-                {/* Top Row: Title & Button */}
-                <div className="flex items-start justify-between gap-2 sm:gap-4 mb-2">
-                  <div>
-                    <h3 className="text-sm sm:text-base font-semibold text-foreground">
-                      {cert.title}
-                    </h3>
-                    <p className="text-muted-foreground text-xs mt-0.5 sm:mt-1">
-                      {cert.issuer}
-                    </p>
-                  </div>
-                  <a
-                    href={cert.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="shrink-0 text-xs px-2 sm:px-3 py-1 sm:py-1.5 bg-foreground text-background rounded-lg hover:opacity-90 transition-opacity"
-                  >
-                    Verify
-                  </a>
+                <div className="mb-2">
+                  <h3 className="text-sm sm:text-base font-semibold text-foreground leading-snug">
+                    {cert.title}
+                  </h3>
+                  <p className="text-muted-foreground text-xs mt-0.5 sm:mt-1">
+                    {cert.issuer}
+                  </p>
                 </div>
 
-                {/* Description */}
-                <p className="text-muted-foreground text-xs sm:text-sm mb-2 sm:mb-3">
+                <p className="text-muted-foreground text-xs sm:text-sm mb-3 flex-grow">
                   {cert.description}
                 </p>
 
-                {/* Skills */}
-                <div className="flex flex-wrap gap-1 sm:gap-1.5">
+                <div className="flex flex-wrap gap-1 sm:gap-1.5 mb-3">
                   {cert.skills.map((skill) => (
                     <span
                       key={skill}
@@ -76,6 +77,15 @@ export default function Certifications() {
                     </span>
                   ))}
                 </div>
+
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center text-xs px-3 py-1.5 bg-foreground text-background rounded-lg hover:opacity-90 transition-opacity w-full"
+                >
+                  Verify
+                </a>
               </div>
             ))}
           </div>
