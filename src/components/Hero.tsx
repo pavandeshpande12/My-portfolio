@@ -88,7 +88,7 @@ export default function Hero() {
         <div className="flex items-center gap-4">
           <button
             onClick={() => {
-              const pdfUrl = `${window.location.origin}/resume.pdf`;
+              const pdfUrl = `${window.location.origin}/Pavan_Deshpande_Resume.pdf`;
               window.open(`https://docs.google.com/viewer?url=${encodeURIComponent(pdfUrl)}&embedded=true`, '_blank');
             }}
             className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
@@ -97,7 +97,7 @@ export default function Hero() {
             View Resume
           </button>
           <a
-            href="/resume.pdf"
+            href="/Pavan_Deshpande_Resume.pdf"
             download="Pavan_Deshpande_Resume.pdf"
             className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
           >
