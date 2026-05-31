@@ -3,7 +3,7 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://example.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://my-portfolio-pavandeshpande12.vercel.app"),
   title: "Pavan Deshpande | Developer",
   description:
     "Aspiring Developer passionate about Development, AI, and Product Thinking. Skilled in building efficient applications and solving complex problems.",
