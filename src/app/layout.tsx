@@ -4,12 +4,17 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://my-portfolio-pavandeshpande12.vercel.app"),
-  title: "Pavan Deshpande | Developer",
+  title: "Pavan Deshpande | AI, Cloud & Cybersecurity",
   description:
-    "Aspiring Developer passionate about Development, AI, and Product Thinking. Skilled in building efficient applications and solving complex problems.",
+    "Building secure, intelligent systems across AI, Cloud, and Cybersecurity. Focused on designing resilient architectures and solving complex problems.",
   keywords: [
     "Pavan Deshpande",
-    "Developer",
+    "Artificial Intelligence",
+    "Cloud Computing",
+    "Cybersecurity",
+    "Secure Systems",
+    "Machine Learning",
+    "Cloud Security",
     "Full Stack",
     "React",
     "Next.js",
@@ -18,18 +23,18 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Pavan Deshpande" }],
   openGraph: {
-    title: "Pavan Deshpande | Developer",
+    title: "Pavan Deshpande | AI, Cloud & Cybersecurity",
     description:
-      "Aspiring Developer passionate about Development, AI, and Product Thinking.",
+      "Building secure, intelligent systems across AI, Cloud, and Cybersecurity.",
     siteName: "Pavan Deshpande Portfolio",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pavan Deshpande | Developer",
+    title: "Pavan Deshpande | AI, Cloud & Cybersecurity",
     description:
-      "Aspiring Developer passionate about Development, AI, and Product Thinking.",
+      "Building secure, intelligent systems across AI, Cloud, and Cybersecurity.",
     creator: "@PavanD512",
   },
   robots: {

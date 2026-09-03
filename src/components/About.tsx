@@ -27,8 +27,9 @@ export default function About() {
           {/* Content */}
           <div className="space-y-4 sm:space-y-6 text-sm sm:text-base text-muted-foreground leading-relaxed">
             <p>
-              I&apos;m Pavan. I like building things that just work — simple, clean, and useful.
-              Focused on Development, AI, and Product Thinking.
+              I&apos;m Pavan, an early-career developer who works with cloud, cybersecurity,
+              and AI. I have worked on web and AI-powered applications, and I&apos;m now going
+              deeper into AWS, cloud infrastructure, and cybersecurity.
             </p>
           </div>
         </motion.div>

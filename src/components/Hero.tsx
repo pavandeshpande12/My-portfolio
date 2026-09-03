@@ -64,8 +64,10 @@ export default function Hero() {
         </h1>
 
         {/* Title */}
-        <p className="text-sm sm:text-base text-primary mb-4 sm:mb-6">
-          Developer
+        <p className="text-sm sm:text-base text-primary mb-4 sm:mb-6 max-w-md text-balance leading-relaxed">
+          AI, Cloud &amp; Cybersecurity{" "}
+          <span className="text-muted-foreground">|</span>{" "}
+          <span className="text-foreground/80">Building Secure, Intelligent Systems</span>
         </p>
 
         {/* Social Links */}
