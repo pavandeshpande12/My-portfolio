@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, FileText, Download } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 
 const socialLinks = [
@@ -86,27 +86,7 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Resume Links */}
-        <div className="flex items-center gap-4">
-          <button
-            onClick={() => {
-              const pdfUrl = `${window.location.origin}/Pavan_Deshpande_Resume.pdf`;
-              window.open(`https://docs.google.com/viewer?url=${encodeURIComponent(pdfUrl)}&embedded=true`, '_blank');
-            }}
-            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
-          >
-            <FileText size={16} />
-            View Resume
-          </button>
-          <a
-            href="/Pavan_Deshpande_Resume.pdf"
-            download="Pavan_Deshpande_Resume.pdf"
-            className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Download size={16} />
-            Download
-          </a>
-        </div>
+        {/* Resume Links - hidden until resume is ready */}
       </motion.div>
     </section>
   );
