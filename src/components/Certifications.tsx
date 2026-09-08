@@ -6,6 +6,13 @@ import { useRef } from "react";
 
 const certifications = [
   {
+    title: "AWS Certified AI Practitioner",
+    description: "Validated expertise in AI/ML concepts, generative AI, and responsible AI practices on AWS.",
+    issuer: "Amazon Web Services • 2026",
+    skills: ["AI/ML", "Generative AI", "AWS", "Amazon Bedrock", "Responsible AI"],
+    link: "https://www.credly.com/badges/36245b71-90ac-41cd-9e1f-27ad1d437525/public_url",
+  },
+  {
     title: "The Complete 2024 Web Development Bootcamp",
     description: "Comprehensive full-stack web development course covering modern technologies and best practices.",
     issuer: "Udemy • Dr. Angela Yu",

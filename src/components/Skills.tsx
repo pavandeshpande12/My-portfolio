@@ -8,6 +8,7 @@ const skills = [
   "Next.js",
   "TypeScript",
   "Python",
+  "Generative AI",
   "AI Agents",
   "AI Integration",
   "LLM Workflows",
