@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { GeistMono } from "geist/font/mono";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -52,6 +53,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth" data-theme="dark">
       <body className={`${GeistMono.className} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );

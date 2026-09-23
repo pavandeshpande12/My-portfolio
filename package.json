@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@eslint/compat": "^1.4.1",
+    "@vercel/analytics": "^2.0.1",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.0",
     "geist": "^1.5.1",
